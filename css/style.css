@@ -1,6 +1,12 @@
 /* ===========common-css start========== */
-
-
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+.i-center{
+    align-items: center;
+}
 /* ===========common-css end========== */
 /* ===========navber start========== */
 nav{
@@ -16,68 +22,75 @@ nav{
     padding-right: 0px !important;
     color: #203239;
     font-size: 16px;
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", serif;
     font-weight: 300;
 }
 .nav-link:hover{
     color: #000;
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
     font-weight: 400;
-    transition: .3s;
 }
 
 /* ===========navber end============ */
 /* ===========banner start============ */
 .banner{
     background: #EEEDDE;
-    padding: 65px 0px;
+    padding: 30px 0px;
 }
 
-.bennar-content h1{
-    font-size: 64px;
-    font-family: "Inter", sans-serif;
+.banner-content h1{
+    font-size: 56px;
+    font-family: "Poppins", serif;
     font-weight: 600;
-    color: #4D4D4D;
+    line-height: 150%;
+    color: #000;
 }
-.bennar-content h1 span{
-    color: #4CAF4F;
-}
-.bennar-content p{
-    padding: 16px 0px;
+
+.banner-content p{
+    padding: 24px 0px;
     font-size: 16px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    color: #717171;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    color: #203239;
+    width: 520px;
+    line-height: 190%;
+}
+.banner-search{
+    position: relative;
+}
+.banner-search i{
+    font-size: 25px;
+    position: absolute;
+    top: 17px;
+    left: 19px;
+
+}
+.banner-search input{
+    width: 70%;
+    padding: 20px 130px 20px 49px;
+    border-radius: 13px;
+    border: transparent;
+}
+.banner-search button{
+    background: #203239;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: transparent;
+    position: absolute;
+    top: 10px;
+    right: 272px;
+    box-shadow: 0px 3px 4px #203239;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+}
+
+.bennar-image img{
+    width: 100%;
 }
 
 /* ===========banner end============ */
 /* ===========client-part start============ */
-
-.client{
-    text-align: center;
-    padding: 40px 0px;
-}
-.client h1{
-    font-size: 36px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    color: #4D4D4D;
-}
-.client p{
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    color: #717171;
-    padding: 8px 0px;
-}
-.client ul{
-    display: flex;
-    column-gap: 140px;
-    justify-content: center;
-    list-style: none;
-    padding: 25px 0px;
-}
 
 /* ===========client-part end============ */
 /* ===========Community-part start============ */
