@@ -7,6 +7,15 @@
 .i-center{
     align-items: center;
 }
+.titel h1{
+    font-size: 36px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    width: 535px;
+    line-height: 150%;
+    color: #203239;
+    padding-bottom: 40px;
+}
 /* ===========common-css end========== */
 /* ===========navber start========== */
 nav{
@@ -128,7 +137,85 @@ nav{
     width: 100%;
 }
 
-/* ===========banner end============ */
+/* ===========banner end==========*/
+
+/* ===========content-one start============ */
+.content-one{
+    padding: 50px 0px;
+}
+.content-one .card-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.card-menu .card{
+    border: 1px solid rgba(238, 237, 222, 0%);
+    border-radius: 10px;
+    transition: .2s;
+}
+.card-menu .card:hover{
+    border: 1px solid rgba(238, 237, 222, 100%);
+}
+.card-menu .card-body{
+    padding: 35px 15px 30px 28px;
+    position: relative;
+}
+.card-menu .card-body h5::before{
+    position: absolute;
+    top: 27px;
+    left: 0;
+    width: 9px;
+    height: 32px;
+    background: #F6762E;
+    content: "";
+    border-radius: 10px;
+}
+.card-menu .card-body h5{
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+}
+.card-menu .card-body span{
+    color: #F6762E;
+    padding-left: 124px;
+}
+.card-menu .card-body p{
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    color: #203239;
+    width: 227px;
+    padding-top: 8px;
+    padding-bottom: 30px;
+    line-height: 32px;
+}
+.card-text{
+    padding-bottom: 58px !important;
+}
+.card-menu .card-body a{
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(0,0,0,100%);
+    position: relative;
+}
+.card-menu .card-body a::after{
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 0%;
+    height: 34px;
+    content: "";
+    transition: .4s;
+}
+.card-menu .card-body a:hover::after{
+    background: rgba(214,213,199,46%);
+    width: 113%;
+}
+.card-menu .card-body a i{
+    padding-left: 12px;
+}
+/* ===========content-one end============ */
 
 /* ===========Footer-part start============ */
 
