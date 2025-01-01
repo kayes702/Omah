@@ -17,6 +17,25 @@ nav{
     column-gap: 100px;
     margin-left: auto;
 }
+.navbar-nav li{
+    position: relative;
+}
+.navbar-nav li::before{
+    position: absolute;
+    bottom: -2px;
+    right: 24%;
+    width: 40%;
+    height: 3px;
+    background: #F6762E;
+    content: "";
+    opacity: 0;
+    transition: .3s;
+}
+.navbar-nav li:hover:before{
+    width: 100%;
+    opacity: 1;
+    right: 0;
+}
 .nav-link{
     padding-left: 0px !important;
     padding-right: 0px !important;
@@ -85,256 +104,32 @@ nav{
     font-weight: 500;
 }
 
+.count{
+    padding-top: 55px;
+}
+.count h1{
+    font-size: 56px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+}
+.count span{
+    color: #F6762E;
+}
+.count p{
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    color: #203239;
+    width: 54%;
+    line-height: 165%;
+}
+
 .bennar-image img{
     width: 100%;
 }
 
 /* ===========banner end============ */
-/* ===========client-part start============ */
 
-/* ===========client-part end============ */
-/* ===========Community-part start============ */
-.Community-part{
-    padding: 40px 0px;
-}
-.community{
-    text-align: center;
-}
-.community h1{
-    font-size: 36px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    color: #4D4D4D;
-    width: 535px;
-    margin: 0 auto;
-    padding-bottom: 8px;
-}
-.community p{
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    color: #4D4D4D;
-    padding-bottom: 16px;
-    width: 623px;
-    margin: 0 auto;
-}
-.card{
-    padding: 40px 60px;
-    text-align: center;
-    box-shadow: 0px 1px 2px -1px;
-    border: none;
-}
-.card img{
-    width: 20%;
-    margin: 0 auto;
-}
-.card h1{
-    font-size: 28px;
-    font-family: "Inter", sans-serif;
-    font-weight: 900;
-    color: #4D4D4D;
-    padding-top: 16px;
-    padding-bottom: 8px;
-    width: 230px;
-    margin: 0 auto;
-}
-
-.card p{
-    font-size: 14px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    color: #717171;
-}
-/* ===========Community-part end============ */
-/* ===========unlock-part start============ */
-.unlock{
-    padding: 40px 0px;
-}
-.unlock h1{
-    font-size: 36px;
-    width: 580px;
-}
-.unlock p{
-    width: 660px;
-    padding-top: 8px;
-    padding-bottom: 0px;
-}
-/* ===========unlock-part end============ */
-/* ===========Achivment-part end============ */
-
-.achivment{
-    background: #F5F7FA;
-    padding: 64px 0px;
-    margin: 40px 0px;
-}
-.achivment h1{
-    font-size: 36px;
-    width: 380px;
-}
-.achivment p{
-    padding: 0px;
-    color: #18191F;
-    margin: 0px;
-}
-.rusalt-content{
-    display: flex;
-    column-gap: 90px;
-    row-gap: 40px;
-    flex-wrap: wrap;
-}
-.rusalt{
-    display: flex;
-    column-gap: 16px;
-    align-items: center;
-}
-.rusalt h2{
-    margin: 0;
-    font-size: 28px;
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
-    color: #4D4D4D;
-}
-.rusalt p{
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    color: #717171;
-}
-.last{
-    padding-left: 35px;
-}
-/* ===========Achivment-part end============ */
-/* ===========Customar-part end============ */
-.customar{
-    background: #F5F7FA;
-}
-.customar .bennar-content h3{
-    color: #4CAF4F;
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-}
-.customar .bennar-content .customar-logo ul{
-    display: flex;
-    column-gap: 30px;
-    justify-content: start;
-    list-style: none;
-    padding: 25px 0px;
-}
-
-.customar .meet{
-    align-self: center;
-    margin: 0px;
-}
-/* ===========Customar-part end============ */
-/* ===========Customar-update start============ */
-.customar-update{
-    padding-top: 40px;
-} 
-.frame img{
-    width: 100%;
-}
-.frame .card{
-    background: #F5F7FA;
-    width: 375px;
-    margin: 0 auto;
-    transition: .4s;
-    top: 0px;
-    opacity: 0;
-}
-.frame:hover .card{
-    top: -100px;
-    opacity: 1;
-}
-.frame .card h6{
-    color: #717171;
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-}
-.frame .card a{
-    color: #7aaf7c;
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-}
-.frame .card a:hover{
-    color: #4CAF4F;
-}
-/* ===========Customar-update end============ */
-/* ===========Demo-part end============ */
-.demo{
-    text-align: center;
-    background: #F5F7FA;
-    padding: 32px 0px;
-}
-.demo .common-button h1{
-    font-size: 64px;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    width: 834px;
-    margin: 0 auto;
-    padding-bottom: 16px;
-}
-/* ===========Demo-part end============ */
 /* ===========Footer-part start============ */
-.footer{
-    background: #263238;
-    padding: 65px 0px;
-}
-.footer .footer-content p{
-    color: #F5F7FA;
-    padding: 40px 0px;
-    width: 220px;
-    font-size: 14px;
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-    line-height: 35px;
-    margin: 0px;
-}
-.footer .footer-image{
-        display: flex;
-        column-gap: 16px;
-}
-.footer .footer-image img{
-    border-radius: 50%;
-    background: #515B60;
-    padding: 8px;
-    width: 35px;
 
-}
-.footer .colum h5{
-    color: #F5F7FA;
-    font-size: 20px;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    padding-bottom: 6px;
-}
-.footer .colum ul{
-    list-style: none;
-    padding: 0px 5px;
-}
-.footer .colum ul li{
-    font-size: 14px;
-    font-family: "Inter", sans-serif;
-    font-weight: 300;
-    color: #F5F7FA;
-    padding: 6px 0px;
-}
-.footer .colum .from input{
-    padding: 4px 9px;
-    border-radius: 5px;
-    background: #515B60;
-    border: transparent;
-    color: #D9DBE1;
-    position: relative;
-}
-.footer .colum .from button{
-    background: transparent;
-    border: transparent;
-    position: absolute;
-    right: 413px;
-    padding-top: 2px;
-}
 /* ===========Footer-part end============ */
